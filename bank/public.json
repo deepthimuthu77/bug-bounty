@@ -1,0 +1,77 @@
+[
+  {
+    "id": "factory-92ca0dcb48ba4c07b10a",
+    "language": "python",
+    "mode_support": [
+      "classic"
+    ],
+    "title": "Off-by-one Loop",
+    "difficulty": "easy",
+    "category": "off-by-one",
+    "concept": "loops and equality",
+    "buggy_code": "def sum_to_n(n):\n    total = 0\n    for i in range(n):\n        total += i\n    return total\n",
+    "visible_tests": [
+      {
+        "input": "print(sum_to_n(0))",
+        "expected": "0\n"
+      },
+      {
+        "input": "print(sum_to_n(3))",
+        "expected": "6\n"
+      }
+    ],
+    "par_seconds": 60,
+    "generator": "mutation",
+    "fingerprint": "92ca0dcb48ba4c07b10a"
+  },
+  {
+    "id": "factory-0d0ea276bc4f4688bb0a",
+    "language": "python",
+    "mode_support": [
+      "classic"
+    ],
+    "title": "Off-by-one Loop",
+    "difficulty": "easy",
+    "category": "operator",
+    "concept": "loops and equality",
+    "buggy_code": "def sum_to_n(n):\n    total = 0\n    for i in range(n - 1):\n        total += i\n    return total\n",
+    "visible_tests": [
+      {
+        "input": "print(sum_to_n(0))",
+        "expected": "0\n"
+      },
+      {
+        "input": "print(sum_to_n(3))",
+        "expected": "6\n"
+      }
+    ],
+    "par_seconds": 60,
+    "generator": "mutation",
+    "fingerprint": "0d0ea276bc4f4688bb0a"
+  },
+  {
+    "id": "factory-44432d8c7a438ac7087f",
+    "language": "javascript",
+    "mode_support": [
+      "classic"
+    ],
+    "title": "Loose Equality",
+    "difficulty": "easy",
+    "category": "type-coercion",
+    "concept": "loops and equality",
+    "buggy_code": "function isStrictlyEqual(a, b) {\n    return a == b;\n}\n",
+    "visible_tests": [
+      {
+        "input": "console.log(isStrictlyEqual(5, 5))",
+        "expected": "true\n"
+      },
+      {
+        "input": "console.log(isStrictlyEqual(5, '5'))",
+        "expected": "false\n"
+      }
+    ],
+    "par_seconds": 60,
+    "generator": "mutation",
+    "fingerprint": "44432d8c7a438ac7087f"
+  }
+]

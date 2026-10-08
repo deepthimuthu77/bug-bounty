@@ -1,0 +1,44 @@
+{
+  "generated": 5,
+  "accepted": 3,
+  "rejected": {
+    "duplicate fingerprint": 2
+  },
+  "entries": [
+    {
+      "status": "accepted",
+      "fingerprint": "92ca0dcb48ba4c07b10a",
+      "generator": "mutation",
+      "model": "fake-v1"
+    },
+    {
+      "status": "rejected",
+      "reason": "duplicate fingerprint",
+      "fingerprint": "92ca0dcb48ba4c07b10a",
+      "generator": "mutation",
+      "model": "fake-v1"
+    },
+    {
+      "status": "accepted",
+      "fingerprint": "0d0ea276bc4f4688bb0a",
+      "generator": "mutation",
+      "model": "fake-v1"
+    },
+    {
+      "status": "accepted",
+      "fingerprint": "44432d8c7a438ac7087f",
+      "generator": "mutation",
+      "model": "fake-v1"
+    },
+    {
+      "status": "rejected",
+      "reason": "duplicate fingerprint",
+      "fingerprint": "44432d8c7a438ac7087f",
+      "generator": "mutation",
+      "model": "fake-v1"
+    }
+  ],
+  "prompt_version": "bug-factory-v1",
+  "unique_public_bank_count": 3,
+  "unique_private_bank_count": 3
+}

@@ -1,4 +1,5 @@
 import { Problem } from './schemas';
+import factoryProblems from '../../bank/public.json';
 
 export const seededProblems: Problem[] = [
   {
@@ -34,5 +35,6 @@ export const seededProblems: Problem[] = [
       { input: "console.log(isStrictlyEqual(5, 5))", expected: "true\n" },
       { input: "console.log(isStrictlyEqual(5, '5'))", expected: "false\n" }
     ]
-  }
+  },
+  ...(factoryProblems as Problem[]),
 ];

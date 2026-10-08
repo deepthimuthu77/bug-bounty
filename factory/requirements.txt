@@ -1,0 +1,2 @@
+# Optional dependency; the deterministic fake provider works with Python stdlib only.
+google-genai>=1.30.0,<2.0.0

@@ -4,11 +4,11 @@
 
 | Feature | Description | Status | Evidence |
 |---|---|---|---|
-| AI Creates Bugs | Pipeline to generate bugs using AI via Gemini | Planned | Factory logs & verified bug bank |
-| Learner Hunts Bugs | Core loop where users fix broken code | Planned | Editor UI & test runner |
+| AI Creates Bugs | Optional Gemini-backed pipeline; deterministic fake-provider content is currently banked | Partial | Factory audit and bank; Gemini run requires a configured key |
+| Learner Hunts Bugs | Core loop uses browser execution for Python/JavaScript and a verified public bank | Partial | Editor UI, test runner, and `bank/public.json` |
 | Language Picker | Users select from Python, JS, C++, Go, Rust, Java | Planned | UI Language picker on landing page |
 | Short Program | The generated code is short (8-40 lines) | Planned | Game layout & factory rules |
-| Fair & Fun | Bugs verified deterministically and pass gate rules | Planned | Factory acceptance criteria |
+| Fair & Fun | Python/JavaScript problems pass the deterministic factory gate; compiled languages are compile-only | Partial | Factory gate and audit; compiled-language execution is not implemented |
 | Hints that Teach | Metered hints with points penalty & explanations | Planned | Scoring logic & hint UI |
 | Retention & Habit | Daily streak, XP, combo, leaderboard, weakness bias | Planned | Streaks, Leaderboard, Bug Dex |
 
